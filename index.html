@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <script src="modules/lodash.min.js"></script>
+  <script src="modules/test-boilerplate.js"></script>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+<div class = title>
+  <h1>サイコロタウンへようこそ！！</h1><br>
+</div>
+
+<div class="music">
+  <h5>音楽はGeminiで作ったフリー素材です。</h5>
+  <audio  controls loop src="music/casino.mp3" ></audio>
+</div>
+
+  <div Class = picture>
+  <img src="pic/self-introduction.png" alt="自己紹介の画像" width="800">
+</div>
+
+
+<div class="box">
+  <h1>🎲 サイコロポーカー</h1>
+</div>
+<div><p></p></div>
+  <div class ="box2">
+    <div class = "dice-bord">
+      <div class="dice-wrapper">
+        <!-- ダイス0 -->
+        <div class="dice-item0" style="text-align: center;">
+          <img id="dice-img0" src="pic/dice1.jpg" alt="dice"><br>
+          <span id="d0">-</span><br>
+          <input type="checkbox" id="keep0">キープ
+        </div>
+        <!-- ダイス1 -->
+        <div class="dice-item1">
+          <img id="dice-img1" src="pic/dice1.jpg" alt="dice"><br>
+          <span id="d1">-</span><br>
+          <input type="checkbox" id="keep1">キープ        
+        </div>
+        <!-- ダイス2 -->
+        <div class="dice-item2" style="text-align: center;">
+          <img id="dice-img2" src="pic/dice2.jpg" alt="dice"><br>
+          <span id="d2">-</span><br>
+          <input type="checkbox" id="keep2">キープ
+        </div>
+        <!-- ダイス3 -->
+        <div class="dice-item3" style="text-align: center;">
+          <img id="dice-img3" src="pic/dice3.jpg" alt="dice"><br>
+          <span id="d3">-</span><br>
+          <input type="checkbox" id="keep3">キープ
+        </div>
+        <!-- ダイス4 -->
+        <div class="dice-item4" style="text-align: center;">
+          <img id="dice-img4" src="pic/dice4.jpg" alt="dice"><br>
+          <span id="d4">-</span><br>
+          <input type="checkbox" id="keep4">キープ
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div><p></p></div>
+
+<div class ="box3">
+  <div class = "operation">
+    <button id="main-btn" onclick="playGame()">勝負する！</button>
+    <button id="reroll-btn" onclick="reroll()" style="display: none;">振り直す（1回限定）</button>
+    <button id="reset-btn" onclick="resetGame()" style="display: none;">もう一度遊ぶ</button>
+  </div>
+</div>
+
+<div><p></p></div>
+
+<div class = "output-bord">
+  <div class = "monitor">
+    <p id="message">役: ---</p>
+  </div>
+  <div class = "monitor">  
+    <p id="score">スコア: ---</p>
+  </div>
+  <div class = "monitor">   
+    <p id="greeting" ></p>
+    <script src="table.js"></script>
+    <script src="script.js"></script>
+    <script src="test.js"></script>
+  </div>
+</div>
+
+<div class="box5">
+<h2>本コード開発のきっかけ</h2>
+</div>
+
+<div class = box4>
+  <div class= "comment">
+    <h3>
+      子供と遊ぶために、”STR！KE”というドイツのボードゲームを購入しました。<br> 
+      楽しく遊んでいたのですが子供が飽きてしまったので、サイコロを使ってポーカーができないか？<br>
+      このゲームを考えて遊んでいたのでプログラミングで作ってみようと思ったのがきっかけです。<br>
+      <br>
+      遊び方は、アリーナの中にダイスを振りいれて勝負し、勝ち残りを目指すダイスゲームです。<br>
+      　ゾロ目がでたら、もう一度ダイスを振るか、手番を終えるか。<br>
+      　＊は出た場合はゲームからダイスを除外し、もう一度ダイスを振るか、手番を終えるか。<br>
+      　手番が来た時に、アリーナにダイスが1個もないときは手持ちもダイスを振り入れます。<br>
+      　これを各プレーヤーで回す。<br>
+    </h3>
+  </div>
+
+  <div class = picture>
+    <img src="pic/strike_001.jpg" alt="サイコロの画像" width="250">
+    <img src="pic/strike_002.jpg" alt="サイコロの画像" width="250">
+  </div>
+</div>
+
+
+</body>
+</html>
