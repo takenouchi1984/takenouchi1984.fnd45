@@ -111,7 +111,7 @@ function resetGame() {
   currentDice = [0, 0, 0, 0, 0];
   for (let i = 0; i < 5; i++) {
     document.getElementById(`d${i}`).innerText = "*";
-    document.getElementById(`dice-img${i}`).src = "dice1.jpg"; // 画像リセット
+    document.getElementById(`dice-img${i}`).src = "dice1.jpg"; // 画像リセット　△１修正要　githubの階層に変更
     document.getElementById(`keep${i}`).checked = false;
   }
 
@@ -139,7 +139,7 @@ function updateUI() {
     // テキスト表示の更新
     document.getElementById(`d${i}`).innerText = diceNum;
 
-    // 画像表示の更新（picフォルダ内の画像を参照）
+    // 画像表示の更新（picフォルダ内の画像を参照）△１修正要　githubの階層に変更
     document.getElementById(`dice-img${i}`).src = `dice${diceNum}.jpg`;
   }
 
