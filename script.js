@@ -111,7 +111,7 @@ function resetGame() {
   currentDice = [0, 0, 0, 0, 0];
   for (let i = 0; i < 5; i++) {
     document.getElementById(`d${i}`).innerText = "*";
-    document.getElementById(`dice-img${i}`).src = "pic/dice1.jpg"; // 画像リセット
+    document.getElementById(`dice-img${i}`).src = "dice1.jpg"; // 画像リセット
     document.getElementById(`keep${i}`).checked = false;
   }
 
@@ -140,7 +140,7 @@ function updateUI() {
     document.getElementById(`d${i}`).innerText = diceNum;
 
     // 画像表示の更新（picフォルダ内の画像を参照）
-    document.getElementById(`dice-img${i}`).src = `pic/dice${diceNum}.jpg`;
+    document.getElementById(`dice-img${i}`).src = `dice${diceNum}.jpg`;
   }
 
   // 役判定　htmlに値を受け渡す。
