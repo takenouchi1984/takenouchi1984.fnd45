@@ -149,6 +149,16 @@ input[type=checkbox] {
   justify-content: center; 
 }
 
+.picture-note{
+  border-style: solid;
+  border-width: 7.5px;
+  border-color:  rgb(33, 9, 212); 
+  gap: 5px;
+  display: flex;    
+  align-items: center;
+  justify-content: center; 
+}
+
 .picture {
   display: flex;    
   flex-direction: center;
